@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ronalyn's Portfolio</title>
+    <style>
+       
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f891be; 
+            color: #181818; 
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: #fcccd6; 
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #f670b5;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-logo {
+            font-weight: bold;
+            font-size: 1.4rem;
+            text-decoration: none;
+            color: #181818;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #181818;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+        }
+
+        header {
+            background-color: #fcccd6;
+            text-align: center;
+            padding: 50px 20px;
+            border-bottom: 4px solid #f670b5;
+        }
+
+   
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        aside {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .profile-box {
+            background-color: #fcccd6;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            border: 2px solid #f670b5;
+            margin-bottom: 25px;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #f891be;
+            margin-bottom: 15px;
+            object-fit: cover;
+            background-color: #ffffff;
+        }
+
+        
+        main {
+            flex: 2;
+            min-width: 320px;
+        }
+
+        section {
+            background-color: #fcccd6;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            border: 1px solid #f670b5;
+        }
+        
+
+        h2 {
+            border-bottom: 2px solid #f670b5;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+       
+        .project-card {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border: 1px dashed #f670b5;
+        }
+
+        .project-title {
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: block;
+            font-size: 1.1rem;
+        }
+
+        .btn-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .btn {
+            flex: 1;
+            min-width: 120px;
+            text-decoration: none;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            transition: 0.3s;
+            text-transform: uppercase;
+        }
+
+       
+        .btn-dark {
+            background-color: #181818;
+            color: #fcccd6;
+        }
+
+        .btn-dark:hover {
+            background-color: #f670b5;
+            color: #181818;
+        }
+
+        .btn-pink {
+            background-color: #f670b5;
+            color: #181818;
+        }
+
+        .btn-pink:hover {
+            background-color: #181818;
+            color: #f670b5;
+        }
+
+      
+        .hobby-item {
+            display: inline-block;
+            background-color: #f670b5;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 15px;
+            margin: 3px;
+            font-size: 0.85rem;
+        }
+
+        footer {
+            background-color: #fcccd6;
+            text-align: center;
+            padding: 30px;
+            border-top: 2px solid #f670b5;
+        }
+
+        @media (max-width: 768px) {
+            .container { flex-direction: column; }
+            .btn { flex: 1 1 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#" class="nav-logo">RONA'S PORTFOLIO</a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Hi, My name is <strong>Ronalyn Flores </strong></h1>
+        <p>Welcome to my Web Development Portfolio</p>
+    </header>
+
+    <div class="container">
+        
+        <aside>
+            <div class="profile-box">
+                <img src="images/ronapfp.jfif" alt="Peter Parker" class="profile-img">
+                <h2>Ronalyn</h2>
+                <p>BSIT Student</p>
+            </div>
+
+            <section id="education">
+                <h2>Education</h2>
+                <p><strong>BSIT - Ongoing</strong> (Pampanga State Agricultural University)</p>
+                <p><strong>STEM</strong> (Anastacio G. Yumul Highschool)</p>
+                <p><strong>Elementary</strong> (Marimla Elementary School)</p>
+            </section>
+        </aside>
+
+        <main>
+            <section id="about">
+                <h2> About Me</h2>
+                <p>
+I'm Ronalyn. I find joy in the delicate balance of life's quiet moments and its vibrant connections. Whether I am getting lost in the pages of a captivating book, preserving the beauty of the world through my camera lens, or sharing meaningful conversations with others, I try to approach everything with a calm focus and gentle determination. I am a student who values graceful growth and completing my goals with elegance.</p>
+                <div style="margin-top:15px;">
+                    <span class="hobby-item">🌐 HTML</span>
+                    <span class="hobby-item">🎨 CSS</span>
+                    <span class="hobby-item">☕ JAVA</span>
+                    <span class="hobby-item">🐍 PYTHON</span>
+                </div>
+            </section>
+
+            <section id="projects">
+                <h2> My Projects</h2>
+
+                <div class="project-card">
+                    <span class="project-title">Midterm Lab Task 1</span>
+                    <div class="btn-group">
+                        <a href="resume1.html" class="btn btn-dark">View Project</a>
+                        <a href="https://hastebin.com/share/zikuxeyice.xml" class="btn btn-pink">View Src</a>
+                        <a href="images/resume1.jfif" class="btn btn-dark">View Output</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <span class="project-title">Midterm Lab Task 2</span>
+                    <div class="btn-group">
+                        <a href="LAT.html" class="btn btn-dark">View Project</a>
+                        <a href="https://hastebin.com/share/qedejagomi.xml" class="btn btn-pink">View Src</a>
+                        <a href="images/lat.jfif" class="btn btn-dark">View Output</a>
+                    </div>
+                </div>
+<div class="project-card">
+                    <span class="project-title">Midterm Lab Task 3</span>
+                    <div class="btn-group">
+                        <a href="Form.html" class="btn btn-dark">View Project</a>
+                        <a href="https://hastebin.com/share/buxiluqace.xml" class="btn btn-pink">View Src</a>
+                        <a href="images/form.jfif" class="btn btn-dark">View Output</a>
+                    </div>
+                </div>
+<div class="project-card">
+                    <span class="project-title">Midterm Lab Task 4</span>
+                    <div class="btn-group">
+                        <a href="map.html" class="btn btn-dark">View Project</a>
+                        <a href="https://hastebin.com/share/uqinoqenox.xml" class="btn btn-pink">View Src</a>
+                        <a href="#" class="btn btn-dark">View Output</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <span class="project-title">Midterm Lab Task 5</span>
+                    <div class="btn-group">
+                        <a href="resume2.html" class="btn btn-dark">View Project</a>
+                        <a href="https://hastebin.com/share/ebolemugey.xml" class="btn btn-pink">View Src</a>
+                        <a href="images/resume2.jfif" class="btn btn-dark">View Output</a>
+                    </div>
+                </div>
+ <div class="project-card">
+                    <span class="project-title">Midterm Lab Task 6</span>
+                    <div class="btn-group">
+                        <a href="task6.html" class="btn btn-dark">View Project</a>
+                        <a href="https://hastebin.com/share/ekowuposup.xml" class="btn btn-pink">View Src</a>
+                        <a href="images/responsive.jfif" class="btn btn-dark">View Output</a>
+                    </div>
+                </div>
+                 <div class="project-card">
+                    <span class="project-title">Final Task 1</span>
+                    <div class="btn-group">
+                        <a href="fiinal.html" class="btn btn-dark">View Project</a>
+                        <a href="https://hastebin.com/share/ibevoxexuk.xml" class="btn btn-pink">View Src</a>
+                        <a href="images/final.jfif" class="btn btn-dark">View Output</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <span class="project-title">Final Task 2</span>
+                    <div class="btn-group">
+                        <a href="task2.html" class="btn btn-dark">View Project</a>
+                        <a href="https://hastebin.ianhon.com/a9ad" class="btn btn-pink">View Src</a>
+                        <a href="images/task2.jfif" class="btn btn-dark">View Output</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <span class="project-title">Final Task 3</span>
+                    <div class="btn-group">
+                        <a href="task3.html" class="btn btn-dark">View Project</a>
+                        <a href="https://hastebin.ianhon.com/7b2b" class="btn btn-pink">View Src</a>
+                        <a href="images/task3.1.jfif" class="btn btn-dark">View Output</a>
+                    </div>
+                </div>
+
+                 <div class="project-card">
+                    <span class="project-title">Final Project</span>
+                    <div class="btn-group">
+                        <a href="site/index.html" class="btn btn-dark">View Project</a>
+                        <a href="https://hastebin.ianhon.com/b341" class="btn btn-pink">View Src</a>
+                        <a href="images/site.jfif" class="btn btn-dark">View Output</a>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>What I believe in</h2>
+                <p>I believe that
+even the quietest moments hold extraordinary magic if we just pay attention.
+
+</p>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>Made by Ronalyn | 2026</p>
+    </footer>
+
+</body>
+</html>
